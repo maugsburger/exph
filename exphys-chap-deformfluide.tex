@@ -10,22 +10,131 @@
 
 \comment{Deformation}
 
-% begin{karte}{}
-%    \begin{align*}
-%        &=
-%    \end{align*}
-% end{karte}
-% 
-% begin{karte}{}
-%    \begin{align*}
-%        &=
-%    \end{align*}
-% end{karte}
-% 
-% 
-% begin{karte}{}
-%    \begin{align*}
-%        &=
-%    \end{align*}
-% end{karte}
-% 
+\begin{karte}{Elastizitätsmodul}
+   \begin{align*}
+       E &= \frac{\sigma}{\varepsilon} \\
+       \bigg[ \frac{\si{\newton}}{\si{\square\meter}} &= \frac{\frac{\si{\newton}}{\si{\square\meter}}}{1} \bigg]
+   \end{align*}
+\end{karte}
+
+\begin{karte}{Zugfestigkeit}
+   \begin{align*}
+       \sigma &= \frac{F}{A} \\
+       \bigg[ \frac{\si{\newton}}{\si{\square\meter}} &= \frac{\si{\newton}}{\si{\square\meter}} \bigg]
+   \end{align*}
+\end{karte}
+
+\begin{karte}{Hooksches Gesetz}
+   \begin{align*}
+       \sigma &= E \cdot \varepsilon \\
+       \bigg[ \frac{\si{\newton}}{\si{\square\meter}} &= \frac{\si{\newton}}{\si{\square\meter}} \cdot {1} \bigg]
+   \end{align*}
+\end{karte}
+
+\begin{karte}{relative Längenänderung}
+   \begin{align*}
+       \varepsilon &= \frac{\Delta l}{l_0} \\
+       \bigg[ 1 &= \frac{\si{\meter}}{\si{\meter}} \bigg]
+   \end{align*}
+\end{karte}
+
+\begin{karte}{Poisson-Zahl}
+   \begin{align*}
+       \mu &=  \left| \frac{ \frac{\Delta d}{d} }{ \frac{\Delta l}{l} } \right|
+   \end{align*}
+   Querkontraktion, Dicke nimmt \(\perp\) zur Dehnung ab.
+\end{karte}
+
+\begin{karte}{Druck}
+   \begin{align*}
+       p &= \frac{F}{A} \\
+       \bigg[ \si{\pascal} &= \frac{\si{\newton}}{\si{\square\meter}} \bigg]
+   \end{align*}
+\end{karte}
+
+\begin{karte}{Kompressibilität}
+   \begin{align*}
+        \frac{\Delta V}{V} &= -\kappa p \\
+        \Rightarrow \kappa &= \frac{3}{E} (1-2\mu) \\
+        \Bigg[ \frac{1}{\si{\pascal}} &= \frac{1}{\frac{\si{\newton}}{\si{\square\meter}}} \Bigg]
+   \end{align*}
+\end{karte}
+
+\begin{karte}{Kompressionsmodul}
+   \begin{align*}
+       K &= \frac{1}{\kappa} \\
+       \Bigg[ \si{\pascal} &= \frac{1}{\frac{1}{\si{\pascal}}} \Bigg]
+   \end{align*}
+\end{karte}
+
+\begin{karte}{Scherspannung}
+   \begin{align*}
+       \tau &= \frac{F_\text{s}}{A} = G \alpha
+   \end{align*}
+    \begin{tabular}[t]{cl}
+        \(F_\text{s}\): & Scherkraft, tangential zu A \\
+        G: & Torsions- oder Schubmodul [\(\si{\pascal}\)]\\
+        \(\alpha\): & Scherwinkel
+    \end{tabular}
+\end{karte}
+
+\begin{karte}{Torsionskonstante\\dünnwandiges Rohr}
+   \begin{align*}
+       D_\varphi  &= \frac{2\pi r^3 d}{l}G \\
+       \bigg[ \si{\newton\meter} &= \frac{\si{\cubic\meter\meter}}{\si{\meter}}\frac{\si{\newton}}{\si{\square\meter}} \bigg]
+   \end{align*}
+    \begin{tabular}[t]{cl}
+        r: & Rohrradius \\
+        d: & Rohrwandstärke, \(d \ll r\) \\
+        l: & Rohrlänge
+    \end{tabular}
+\end{karte}
+
+\begin{karte}{Torsionskonstante\\Vollstab}
+   \begin{align*}
+       D_\varphi  &= \frac{\pi}{2} \frac{R^4}{l} G \\
+       \bigg[ \si{\newton\meter} &= \frac{\si{\raiseto{4}\meter}}{\si{\meter}}\frac{\si{\newton}}{\si{\square\meter}} \bigg]
+   \end{align*}
+    \begin{tabular}[t]{cl}
+        R: & Rohrradius \\
+        l: & Rohrlänge
+    \end{tabular}
+\end{karte}
+
+\begin{karte}{Drehmoment Torsion}
+   \begin{align*}
+       M &= D_\varphi \cdot \varphi \\
+       \bigg[ \si{\newton\meter} &= \si{\newton\meter}\bigg]
+   \end{align*}
+\end{karte}
+
+\begin{karte}{Dehnung eines Stabes \\ Federkonstante}
+   \begin{align*}
+       D &= \frac{E\cdot A}{l} \\
+       \Bigg[ \frac{\si{\newton}}{\si{\meter}} &= \frac{\frac{\si{\newton}}{\si{\square\meter}} \cdot \si{\square\meter}}{\si{\meter}} \Bigg]
+   \end{align*}
+\end{karte}
+
+\begin{karte}{potentielle Energie\\Dehnarbeit}
+   \begin{align*}
+       W &= \frac{1}{2} \cdot E \cdot A \cdot l \cdot \varepsilon^2 = \frac{1}{2} \cdot E \cdot V \cdot \varepsilon^2 \\
+       \Bigg[ \si{\joule} &=  \frac{\si{\newton}}{\si{\square\meter}} \cdot \si{\square\meter} \cdot {\si{\meter}} = \si{\newton\meter} \Bigg]
+   \end{align*}
+\end{karte}
+
+\begin{karte}{Energiedichte Dehnung}
+   \begin{align*}
+       w  &= \frac{W}{V} = \frac{E}{2} \varepsilon^2 \\
+       \bigg[ \frac{\si{\joule}}{\si{\cubic\meter}} &= \frac{\si{\newton}}{\si{\square\meter}}  \\
+           &= \frac{\si{\newton\meter}}{\si{\cubic\meter}}  \bigg]
+   \end{align*}
+\end{karte}
+
+\begin{karte}{Energiedichte Torsion}
+   \begin{align*}
+       w  &= \frac{G}{2} \alpha^2 \\
+       \bigg[ \frac{\si{\joule}}{\si{\cubic\meter}} &= \frac{\si{\newton}}{\si{\square\meter}}  \\
+           &= \frac{\si{\newton\meter}}{\si{\cubic\meter}}  \bigg]
+   \end{align*}
+\end{karte}
+
