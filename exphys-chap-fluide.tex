@@ -10,146 +10,178 @@
 
 \comment{Fluide}
 
-\begin{karte}{}
-   \begin{align*}
-       &=
-   \end{align*}
+\begin{karte}{Viskosität\\ ``Zähigkeit''}
+    \begin{align*}
+        \eta \left[ \si{\newton\second\per\square\meter} \right]
+    \end{align*}
 \end{karte}
 
-\begin{karte}{}
-   \begin{align*}
-       &=
-   \end{align*}
+\begin{karte}{Dichte}
+    \begin{align*}
+        \varrho \left[ \si{\kilogram\per\cubic\meter} \right]
+    \end{align*}
 \end{karte}
 
-\begin{karte}{}
-   \begin{align*}
-       &=
-   \end{align*}
+\begin{karte}{Oberflächenspannung}
+    \begin{align*}
+        \sigma \left[ \si{\joule\per\square\meter} \right]
+    \end{align*}
 \end{karte}
 
-\begin{karte}{}
-   \begin{align*}
-       &=
-   \end{align*}
+\begin{karte}{hydrostatischer Druck \\ Schweredruck}
+    \begin{align*}
+        p(h) &= p_0 + \varrho \cdot h \cdot g \\
+        \bigg[ \si{\pascal} &= \si{\pascal} + \underbrace
+            {\frac{\si{\kilogram}}{\si{\cubic\meter}} \cdot \si{\meter} \cdot \frac{\si{\meter}}{\si{\square\second}}}
+            _{ \frac{\si{\kilogram}}{\si{\meter\square\second}} \cdot \frac{\si{\meter}}{\si{\meter}}=
+            \frac{\si{\newton}}{\si{\square\meter}} = \si{\pascal}}
+            \bigg]
+    \end{align*}
+    \begin{tabular}[t]{cl}
+        \(p_0\): & (Luft-)Druck an der Oberfläche \\
+        \(h\): & Tiefe
+    \end{tabular}
 \end{karte}
 
-\begin{karte}{}
-   \begin{align*}
-       &=
-   \end{align*}
+\begin{karte}{Auftrieb}
+    \begin{align*}
+        F &= (\varrho_\text{Fl} - \varrho_\text{K}) \cdot V_\text{K} \cdot g \\
+        \bigg[ \si{\newton} &= \frac{\si{\kilogram}}{\si{\cubic\meter}} \cdot \si{\cubic\meter} \cdot \frac{\si{\meter}}{\si{\square\second}} = 
+            \si{\kilogram} \frac{\si{\meter}}{\si{\square\second}} \bigg]
+    \end{align*}
+    \begin{tabular}[t]{cl}
+        \( \varrho_\text{Fl} < \varrho_\text{K} \Leftrightarrow F_\text{A} < F_\text{G} \Longrightarrow \) & Körper sinkt \\
+        \( \varrho_\text{Fl} = \varrho_\text{K} \Leftrightarrow F_\text{A} = F_\text{G} \Longrightarrow \) & Körper schwebt \\
+        \( \varrho_\text{Fl} > \varrho_\text{K} \Leftrightarrow F_\text{A} > F_\text{G} \Longrightarrow \) & Körper steigt
+    \end{tabular}
 \end{karte}
 
-\begin{karte}{}
-   \begin{align*}
-       &=
-   \end{align*}
+\begin{karte}{Barometrische Höhenformel}
+    \begin{align*}
+        p &= p_0 \cdot \exp \left(-\frac{\varrho_0}{p_0}\cdot g \cdot h \right)  
+    \end{align*}
 \end{karte}
 
-\begin{karte}{}
-   \begin{align*}
-       &=
-   \end{align*}
+\begin{karte}{Rückstellkraft Oberflächenspannung}
+    \begin{align*}
+        F &= 2 \cdot \sigma \cdot l \\
+        \bigg[ \si{\newton} &= \frac{\si{\joule}}{\si{\square\meter}} \cdot \si{\meter}  = \frac{\si{\newton}}{\si{\meter}} \cdot \si{\meter}  \bigg]
+    \end{align*}
+    \begin{tabular}[t]{cl}
+        \(\sigma\): & Oberflächenspannung \\
+        \(l\): & Länge der Randlinie des Bügels
+    \end{tabular}
 \end{karte}
 
-\begin{karte}{}
-   \begin{align*}
-       &=
-   \end{align*}
+\begin{karte}{Oberflächenenergie}
+    \begin{align*}
+        W &= A \cdot \sigma \\
+        \bigg[ \si{\joule} &= \si{\square\meter} \cdot \frac{\si{\joule}}{\si{\square\meter}} \bigg] \\
+    \end{align*}
 \end{karte}
 
-\begin{karte}{}
-   \begin{align*}
-       &=
-   \end{align*}
+\begin{karte}{Druck in Flüssigkeitskugel}
+    \begin{align*}
+        p &= 2\frac{\sigma}{r} \text{~~Vollkugel (Wassertropfen)}\\
+        p &= 3\frac{\sigma}{r} \text{~~Hohlkugel (Seifenblase)} \\
+        \Bigg[ \si{\pascal} &= \frac{\frac{\si{\joule}}{\si{\square\meter}}}{\si{\meter}}  = \frac{\frac{\si{\newton\meter}}{\si{\square\meter}}}{\si{\meter}}  = \frac{\si{\newton}}{\si{\square\meter}} \Bigg]
+    \end{align*}
 \end{karte}
 
-\begin{karte}{}
-   \begin{align*}
-       &=
-   \end{align*}
+\begin{karte}{Kugeloberfläche- und Volumen}[Geometrie]
+    \begin{align*}
+        A &= 4\pi r^2 &&\text{Kugeloberfläche} \\
+        A &= \frac{4}{3}\pi r^3 &&\text{Kugelvolumen}
+    \end{align*}
 \end{karte}
 
-\begin{karte}{}
-   \begin{align*}
-       &=
-   \end{align*}
+\begin{karte}{Kontinuitätsgleichung\\für inkompressible Medien}
+    \begin{align*}
+        A_1 v_1 &= A_2 v_2 \\
+        \text{für } \varrho &= \text{const}
+    \end{align*}
 \end{karte}
 
-\begin{karte}{}
-   \begin{align*}
-       &=
-   \end{align*}
+\begin{karte}{Bernoulli-Gleichung}
+    \begin{align*}
+        \underbrace{\frac{\varrho}{2}v_1^2}_\text{Staudruck} + \underbrace{p_1}_\text{stat. Druck} &= \underbrace{p_0}_\text{Gesamtdruck}
+    \end{align*}
 \end{karte}
 
-\begin{karte}{}
-   \begin{align*}
-       &=
-   \end{align*}
+\begin{karte}{Newtonsches Reibungsgesetz \\  Viskosität zwischen Platten}
+    \begin{align*}
+        F  &=  \eta \cdot A \cdot \frac{\mathrm dv}{\mathrm dx} \\
+        \bigg[ \si{\newton} &= \frac{\si{\newton\second}}{\si{\square\meter}} \cdot \si{\square\meter} \cdot \frac{\si{\meter\per\second}}{\si{\meter}} 
+            \bigg]
+    \end{align*}
 \end{karte}
 
-\begin{karte}{}
-   \begin{align*}
-       &=
-   \end{align*}
+\begin{karte}{Geschwindigkeit im Stromröhrchen}
+    \begin{align*}
+        v(r) &= \frac{p_1-p_2}{4\eta l}(R^2-r^2) \\
+        \Bigg[ \si{\meter\per\second} &= \frac{\si{\pascal}}{\si{\newton\second\per\square\meter}\si{\meter}} \si{\square\meter} = 
+             \frac{\si{\newton\per\square\meter}}{\si{\newton\second\per\square\meter}\si{\meter}} \si{\square\meter} =
+             \si{\square\meter\per\meter\per\second}
+            \Bigg] 
+    \end{align*}
+     \begin{tabular}[t]{cl}
+         \(p_{1,2}\): &Druck vor und hinter dem Röhrchen \\
+         \(R\): &Radius des umschließenden Rohres \\
+         \(r\): &Radius des Röhrchens
+     \end{tabular}
 \end{karte}
 
-\begin{karte}{}
-   \begin{align*}
-       &=
-   \end{align*}
+\begin{karte}{Antriebskraft Rohrströmung}
+    \begin{align*}
+        F &= \pi \cdot r^2 \cdot  \Delta p \\
+        \bigg[ \si{\newton} &= \si{\square\meter} \cdot \si{\pascal} = \si{\square\meter} \cdot \si{\newton\per\square\meter} \bigg]
+    \end{align*}
 \end{karte}
 
-\begin{karte}{}
-   \begin{align*}
-       &=
-   \end{align*}
+\begin{karte}{Gesetz von Hagen-Poiseuille}
+    \begin{align*}
+        \dot M &= \frac{\varrho\cdot\pi}{8\cdot\eta} \cdot \frac{ \Delta p}{l} \cdot R^4 \sim R^4 \\
+        \Bigg[ \si{\kilogram\per\second} &= 
+            \frac{\si{\kilogram\per\cubic\meter}}{\si{\newton\second\per\square\meter}} \cdot \frac{\si{\newton\per\square\meter}}{\si{\meter}} \cdot \si{\raiseto{4}\meter} = \si[sticky-per=true]{\newton\kilogram\raiseto{6}\meter \per \newton\second\raiseto{6}\meter}
+            \Bigg]
+    \end{align*}
+     \begin{tabular}[t]{cl}
+         \(\dot M\): &Massenstromstärke \\
+         \(\Delta p\): &Druckdifferenz vor und hinter dem Rohr \\
+         \(R\): &Radius des Rohres 
+     \end{tabular}
 \end{karte}
 
-\begin{karte}{}
-   \begin{align*}
-       &=
-   \end{align*}
+\begin{karte}{Stockesches Gesetz für Kugel}
+    \begin{align*}
+        F_\text{R} &= 6 \cdot \pi \cdot \eta \cdot r \cdot v \\
+        \bigg[ \si{\newton} &= \si{\newton\second\per\square\meter} \cdot \si{\meter} \cdot\si{\meter\per\second} \bigg] \\
+    \end{align*}
+    \begin{align*}
+        v = \text{const für:}& \\
+        mg - \left| F_\text{A} \right| &= 6 \cdot \pi \cdot \eta \cdot r \cdot v = F_\text{R}
+    \end{align*}
 \end{karte}
 
-\begin{karte}{}
-   \begin{align*}
-       &=
-   \end{align*}
+\begin{karte}{Reynolds-Zahl}
+    \begin{align*}
+        \mathit{Re} &= \frac{\varrho \cdot L \cdot v}{\eta} \\
+        \Bigg[ 1 &= \frac{\si{\kilogram\per\cubic\meter} \cdot \si{\meter} \cdot \si{\meter\per\second}}{\si{\newton\second\per\square\meter}} 
+            = \frac{\si{\kilogram\per\second\per\meter}}{\si{\kilogram \per\second\per\meter }}
+            \Bigg]
+    \end{align*}
+    Sobald \(\mathit{Re}\) einen bestimmten Grenzwert über\-schreitet (z.B. 2300 bei Rohrströmung), schlägt die Strömung von laminar in turbulent um.
 \end{karte}
 
-\begin{karte}{}
-   \begin{align*}
-       &=
-   \end{align*}
+\begin{karte}{Luftwiderstand}
+    \begin{align*}
+        F &=  c_\mathrm w \cdot \frac{\varrho}{2} \cdot v^2 \cdot A \\
+        \bigg[ \si{\newton} &= 1 \cdot \si{\kilogram\per\cubic\meter} \cdot \si{\square\meter\per\square\second} \cdot \si{\square\meter} \bigg]
+    \end{align*}
+     \begin{tabular}[t]{cl}
+         \(c_\mathrm w\):& Strömungswiderstandskoeffizient \\
+         \(A\): &Stirnfläche
+     \end{tabular}
+
 \end{karte}
 
-\begin{karte}{}
-   \begin{align*}
-       &=
-   \end{align*}
-\end{karte}
-
-\begin{karte}{}
-   \begin{align*}
-       &=
-   \end{align*}
-\end{karte}
-
-\begin{karte}{}
-   \begin{align*}
-       &=
-   \end{align*}
-\end{karte}
-
-\begin{karte}{}
-   \begin{align*}
-       &=
-   \end{align*}
-\end{karte}
-
-\begin{karte}{}
-   \begin{align*}
-       &=
-   \end{align*}
-\end{karte}
