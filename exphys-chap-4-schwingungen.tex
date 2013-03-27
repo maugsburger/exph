@@ -10,50 +10,156 @@
 
 \comment{Schwingungen}
 
-\begin{karte}{}
+\begin{karte}{Bewegungsgleichung \\ harmonischer Oszillator}
     \begin{align*}
-        &=
+        m \ddot x + Dx &= 0
     \end{align*}
 \end{karte}
 
-\begin{karte}{}
+\begin{karte}{Bewegungsgleichung \\ freier, gedämpfter Oszillator}
     \begin{align*}
-        &=
+        m \ddot x + &\beta \dot x + Dx = 0 \\
+%        \text{mit } &\beta = -6 \pi \eta r
     \end{align*}
 \end{karte}
 
-\begin{karte}{}
+\begin{karte}{harmonischer Oszillator}
     \begin{align*}
-        &=
+        x(t) &= x_0 \cos \left( \omega_0 t \right) + \frac{v_0}{\omega_0} \sin \left( \omega_0 t \right) \\
+%        \text{mit } \omega_0 &= \sqrt{\frac{D}{m}}
     \end{align*}
 \end{karte}
 
-\begin{karte}{}
+\begin{karte}{gedämpfter Oszillator}
     \begin{align*}
-        &=
+        y(t) &= y_0 \mathrm e^{-\delta t} \sin \left( \sqrt{  \omega_0^2 - \delta^2 } \cdot t + \varphi_0 \right)
     \end{align*}
 \end{karte}
 
-\begin{karte}{}
+\begin{karte}{gedämpfte Schwingung \\ Reibung Stokesche Kugel}
     \begin{align*}
-        &=
+        \beta &=  -6 \pi \eta r
     \end{align*}
 \end{karte}
 
-\begin{karte}{}
+
+\begin{karte}{Kreisfrequenz physikalisches Pendel}
     \begin{align*}
-        &=
+        \omega_0 &= \sqrt{ \frac{mgS}{\vartheta} }
     \end{align*}
 \end{karte}
 
-\begin{karte}{}
+\begin{karte}{Bewegungsgleichung\\erzwungene Schwingung}
     \begin{align*}
-        &=
+         m \ddot x + \beta \dot x + Dx &= D L_0 \sin \left( \omega t \right) 
     \end{align*}
 \end{karte}
 
-\begin{karte}{}
+\begin{karte}{erzwungene, gedämpfte Schwingung}
     \begin{align*}
-        &=
+        \frac{x_0}{L_0} &= \frac{ \omega_0^2 }{\sqrt{ \left( \omega_0^2 - \omega^2 \right)^2 - \left( 2 \delta \omega \right) ^2   }}
     \end{align*}
+    \begin{tabular}[t]{cl}
+        \(x_0 \): & Amplitude der Schwingung \\
+        \(L_0 \): & Amplitude des Erregers \\
+        \(\omega_0 \): & Eigenfrequenz der Schwingung \\
+        \(\omega \): & Frequenz des Erregers \\
+        \(\delta \): & Dämpfung \\
+    \end{tabular}
+\end{karte}
+
+\begin{karte}{Schwebungsfreqzenz \\ schwache Kopplung}
+    \begin{align*}
+        \omega_{schwebung} &= \omega_1 - \omega_2
+    \end{align*}
+    \begin{tabular}[t]{cl}
+        \( D_{12}\): & Kopplungsfeder (\(D_{12} \ll D \)) \\
+        \( D\): & Randfeder \\
+        \( m\): & \( m_{Pendel2} = m_{Pendel1} \)
+    \end{tabular}
+\end{karte}
+
+\begin{karte}{gleichpasige, gekoppelte Schwingung}
+    \begin{align*}
+        \omega_1 &= \omega_0 = \sqrt{\frac{D}{m}}
+    \end{align*}
+    \begin{tabular}[t]{cl}
+        \( D_{12}\): & Kopplungsfeder (immer entspannt) \\
+        \( D\): & Randfeder \\
+        \( m\): & \( m_{Pendel2} = m_{Pendel1} \)
+    \end{tabular}
+\end{karte}
+
+\begin{karte}{gegenphasige, gekoppelte Schwingung}
+    \begin{align*}
+        \omega_2 &= \sqrt{ \frac{D +2 \cdot D_{12}}{m} } \\
+                 &= \sqrt{ \omega_0 + 2 \frac{D_{12}}{m} }
+    \end{align*}
+    \begin{tabular}[t]{cl}
+        \( D_{12}\): & Kopplungsfeder \\
+        \( D\): & Randfeder \\
+        \( m\): & \( m_{Pendel2} = m_{Pendel1} \)
+    \end{tabular}
+\end{karte}
+
+\comment{Wellen}
+
+\begin{karte}{Wellengleichung}
+    \begin{align*}
+        y(t,x) &= y_0 \sin (\omega t - k x)
+    \end{align*}
+\end{karte}
+
+\begin{karte}{Schallgeschwindigkeit in Stab}
+    \begin{align*}
+        c &= \sqrt{ \frac{E}{\rho} }
+    \end{align*}
+    \begin{tabular}[t]{cl}
+        \( E \): & Elastizitätsmodul \\
+        \( \rho \): & Dichte \\
+    \end{tabular}
+\end{karte}
+
+\begin{karte}{Dopplereffekt\\ bewegte Quelle}
+    \begin{align*}
+        f' &= \frac{ f_0 }{ 1 - \frac {v}{c} }
+    \end{align*}
+    \begin{tabular}[t]{cl}
+        \( f' \): & empfangen Frequenz \\
+        \( f \): & gesendete Frequenz \\
+        \( v \): & Geschwindigkeit Quelle\\
+        \( c \): & Schallgeschwindigkeit \\
+    \end{tabular}
+\end{karte}
+
+\begin{karte}{Dopplereffekt\\ bewegter Beobachter}
+    \begin{align*}
+        f' &= f_0 ( 1 + \frac {v}{c} )
+    \end{align*}
+    \begin{tabular}[t]{cl}
+        \( f' \): & empfangen Frequenz \\
+        \( f \): & gesendete Frequenz \\
+        \( v \): & Geschwindigkeit Beobachter\\
+        \( c \): & Schallgeschwindigkeit \\
+    \end{tabular}
+\end{karte}
+
+\begin{karte}{Wellenzahl}
+    \begin{align*}
+        k &= \frac{2 \pi}{\lambda}
+    \end{align*}
+    \begin{tabular}[t]{cl}
+        \( \lambda \): & Wellenlänge \\
+    \end{tabular}
+\end{karte}
+
+\begin{karte}{Phasengeschwindigkeit}
+    \begin{align*}
+        c &= \frac{\lambda}{T} = \frac{\omega}{k}
+    \end{align*}
+    \begin{tabular}[t]{cl}
+        \( T = \tfrac {2\pi}{\omega}\): & ``Ort'' um \(\lambda\) gewandert \\
+        \( k \): &  Wellenzahl \\
+        \( \lambda \): & Wellenlänge \\
+    \end{tabular}
 \end{karte}

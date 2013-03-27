@@ -1,0 +1,172 @@
+%%
+%    * ----------------------------------------------------------------
+%    * "THE BEER-WARE LICENSE" (Revision 42/023):
+%    * Moritz Augsburger wrote this file. As long as you retain this notice you
+%    * can do whatever you want with this stuff. If we meet some day and you
+%    * think this stuff is worth it, you can buy me a beer or a coffee in 
+%    * return.
+%    * ----------------------------------------------------------------
+%
+
+\comment{Thermodynamik}
+
+\begin{karte}{0. Hauptsatz der Thermodynamik}
+    Zwei Körper im thermischen Gleichgewicht haben die selbe Temperatur
+\end{karte}
+
+\begin{karte}{1. Hauptsatz der Thermodynamik}
+    Es ist unmöglich, Energie aus dem nichts zu gewinnen. \\
+    Ein perpetuum mobule erster Art ist unmöglich.
+\end{karte}
+
+\begin{karte}{2. Hauptsatz der Thermodynamik}
+    Wärmeenergie fließt von selbst immer nur zum kälteren Körper, aber nie umgekehrt. \\
+    Ein perpetuum mobule erster Art ist unmöglich.
+\end{karte}
+
+\begin{karte}{3. Hauptsatz der Thermodynamik}
+    Am absoluten Nullpunkt ist die Entropie 0. \\
+    Es ist unmöglich, diesen zu erreichen.
+\end{karte}
+
+\begin{karte}{Längenausdehnung}
+    \begin{align*}
+        \frac{\Delta l}{l} &= \alpha \cdot \Delta T
+    \end{align*}
+    \begin{tabular}[t]{cl}
+        \( l \): & Länge \\
+        \( \Delta l \): & Längenänderung \\
+        \( \Delta T \): & Temperaturänderung \\
+        \( \alpha \): & Wärmeausdehnungskoeffizient
+    \end{tabular}
+\end{karte}
+
+\begin{karte}{Volumenausdehnung}
+    \begin{align*}
+        \frac{\Delta V}{V} &= \gamma \cdot \Delta T
+    \end{align*}
+    \begin{tabular}[t]{cl}
+        \( V \): & Volumen \\
+        \( \Delta V \): & Volumenänderung \\
+        \( \Delta T \): & Temperaturänderung \\
+        \( \gamma \): & Volumenausdehnungskoeffizient
+    \end{tabular}
+\end{karte}
+
+\begin{karte}{Volumenausdehnungskoeffizient \\ Festkörper}
+    \begin{align*}
+        \gamma &= 3 \cdot \alpha
+    \end{align*}
+    \begin{tabular}[t]{cl}
+        \( \gamma \): & Volumenausdehnungskoeffizient \\
+        \( \alpha \): & Wärmeausdehnungskoeffizient
+    \end{tabular}
+\end{karte}
+
+\begin{karte}{spezifische Wärme, \\ Wärmekapazität}
+    \begin{align*}
+        \Delta Q&= c \cdot m \cdot \Delta T = C \cdot \Delta T \\
+        C &= c \cdot m
+    \end{align*}
+    \begin{tabular}[t]{cl}
+        \( \Delta Q \): & Wärmeenergie \\
+        \( \Delta T \): & Temperaturänderung \\
+        \( c \): & spezifische Wärme \( [ \si{\joule\per\kilogram\per\kelvin} ] \) \\
+        \( C \): & Wärmekapazität \( [ \si{\joule\per\kelvin} ] \) \\
+    \end{tabular}
+\end{karte}
+
+\begin{karte}{ideale Gasgleichung}
+    \begin{align*}
+        p \cdot V &= n \cdot R \cdot T = N \cdot k \cdot T
+    \end{align*}
+    \begin{tabular}[t]{cl}
+        \( p \): & Druck \\
+        \( V \): & Volumen \\
+        \( n \): & Stoffmenge \\
+        \( R \): & universelle Gaskonstante \([ \si{\joule\per\mol\per\kelvin} ] \)\\
+        \( T \): & Temperatur in Kelvin\\
+        \( N \): & Teilchenzahl \\
+        \( k = \tfrac{R}{N_A} \): & Boltzmann-Konstante 
+    \end{tabular}
+\end{karte}
+
+\begin{karte}{Teilchenzahl}
+    \begin{align*}
+        N &= n \cdot N_A
+    \end{align*}
+    \begin{tabular}[t]{cl}
+        \( n \): & Stoffmenge \\
+        \( N_A \): & Avogadro-Konstante \\
+        & \( 6,022045 \cdot 10^{23} \tfrac{Teilchen}{mol}\)
+    \end{tabular}
+\end{karte}
+
+\begin{karte}{Wärmebillanz Zustandsänderung}
+    \begin{align*}
+        \Delta U &= \Delta Q \cdot \Delta W
+    \end{align*}
+    \begin{tabular}[t]{cl}
+        \( \Delta U \): & innere Energie\\
+        \( \Delta Q\): & Wärmeenergie \\
+        \( \Delta W \): & mechanische Arbeit \\
+    \end{tabular}
+\end{karte}
+
+\begin{karte}{innere Energie}
+    \begin{align*}
+        \Delta U &= \tfrac{f}{2}\cdot n \cdot  R \cdot  T \Delta T
+    \end{align*}
+    \begin{tabular}[t]{cl}
+        \( f \): & Freiheitsgrade Teilchen \\
+        \( n \): & Stoffmenge \\
+        \( R \): & universelle Gaskonstante \([ \si{\joule\per\mol\per\kelvin} ] \)\\
+        \( T \): & Temperatur in Kelvin\\
+    \end{tabular}
+\end{karte}
+
+\begin{karte}{Freiheitsgrade}
+    \begin{tabular}[t]{rc}
+        einatomiges Gas & \( f = 3 \) \\
+        zweiatomiges Gas & \( f = 5 \) \\
+        Atom in Festkörper & \( f = 6 \)
+    \end{tabular}
+\end{karte}
+
+\begin{karte}{Boltzmann-Konstante}
+    \begin{align*}
+        k &= \frac{R}{N_A} = 1,3807 \cdot 10^{-23} \si{\joule\per\kelvin}
+    \end{align*}
+    \begin{tabular}[t]{cl}
+        \( R \): & universelle Gaskonstante \([ \si{\joule\per\mol\per\kelvin} ] \)\\
+        \( N_A \): & Avogadro-Konstante \([ \si{\per\mol} ] \)\\
+    \end{tabular}
+\end{karte}
+
+\begin{karte}{Zugeführte Wärmeenergie\\isochor, isobar}
+    \begin{align*}
+        \Delta Q &= n \cdot C_{v,p} \cdot \Delta T \\
+        C_v &= \tfrac{f}{2} R && \text{(isochor)} \\
+        C_p &= \tfrac{f+2}{2} R && \text{(isobar)} \\
+    \end{align*}
+\end{karte}
+
+\begin{karte}{Adiabatenkoeffizient}
+    \begin{align*}
+        \kappa &= \frac{f+2}{f} = \frac{C_p}{C_v}
+    \end{align*}
+\end{karte}
+
+\begin{karte}{Isotherme Energieänderung}
+    \begin{align*}
+        \Delta W &= n \cdot R \cdot T \cdot \ln \frac{V_2}{V_1} = - \Delta Q
+    \end{align*}
+    \begin{tabular}[t]{cl}
+        \( n \): & Stoffmenge \\
+        \( R \): & universelle Gaskonstante \([ \si{\joule\per\mol\per\kelvin} ] \)\\
+        \( T \): & Temperatur in Kelvin\\
+        \( V_1 \): & Volumen \(t_0\)\\
+        \( V_2 \): & Volumen \(t_1\)\\
+    \end{tabular}
+\end{karte}
+

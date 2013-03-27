@@ -1,0 +1,304 @@
+\setcardid{200}
+\comment{Elektrizität}
+
+\begin{karte}{elektrische Ladung}
+    \begin{align*}
+        Q &= 1 \si{\coulomb} = 1 \text{Coulomb} \\
+        e &=  \SI{1.0602e-19}{\coulomb} \\
+    \end{align*}
+    \begin{tabular}[t]{cl}
+        \( Q \): & elektrische Ladung \\
+        \( e \): & Elementarladung\\
+    \end{tabular}
+\end{karte}
+
+\begin{karte}{Coulomb-Kraft\\elektrostatische Kraft}
+    \begin{align*}
+        F_c &= \frac{1}{4 \pi \varepsilon_0 } \cdot \frac{Q_1 \cdot Q_2 }{r^2} 
+    \end{align*}
+    \begin{tabular}[t]{cl}
+        \( \varepsilon_0 \): & elektrische Feldkonstante \\
+        \( F_c \): & \( \vec{F_c} \| \vec r \) \\
+        \( r \): & Abstand der Punktladungen
+    \end{tabular}
+\end{karte}
+
+\begin{karte}{elektrische Feldkonstante}
+    \begin{align*}
+        \varepsilon_0 &= \SI{8,854e-12}{\ampere\second\per\volt\per\meter} \\
+        \SI{1}{\ampere\second\per\volt\per\meter} &= 
+        \SI{1}{\coulomb\per\volt\per\meter} =
+        \SI{1}{\farad\per\meter} \\
+        &= \SI{1}{\square\ampere\second\tothe{4}\per\kilogram\per\cubic\meter} =
+        \SI{1}{\square\coulomb\per\newton\per\square\meter}
+    \end{align*}
+\end{karte}
+
+\begin{karte}{potentielle Energie\\elektrisches Feld}
+    \begin{align*}
+        W_{pot} &= \frac{1}{4 \pi \varepsilon_0 } \cdot \frac{Q_1 \cdot Q_2 }{r} 
+    \end{align*}
+    \begin{tabular}[t]{cl}
+        \( \varepsilon_0 \): & elektrische Feldkonstante \\
+        \( r \): & Abstand der Punktladungen
+    \end{tabular}
+\end{karte}
+
+\begin{karte}{elektrisches Feld\\Punktladung}
+    \begin{align*}
+        \vec E (\vec r) &= \frac{ \vec{F_C} ( \vec r ) }{Q} \\
+        \vec E_{Q_1} (\vec r) &= \frac{1}{4 \pi \varepsilon_0 } \cdot \frac{Q_1}{r^2} 
+    \end{align*}
+\end{karte}
+
+\begin{karte}{elektrisches Potential}
+    \begin{align*}
+        \varphi(\vec r) &= \frac{W_{pot}}{Q} \\
+        \varphi_{Q_1} (\vec r) &= \frac{1}{4 \pi \varepsilon_0 } \cdot \frac{Q_1}{r} 
+    \end{align*}
+\end{karte}
+
+\begin{karte}{elektrische Spannung}
+    \begin{align*}
+        U &= \Delta \varphi \\
+          &= \int_{r1}^{r2} \vec E \cdot \vec{ds} \\
+        \bigg[ \si{\volt} &= \si{\joule\per\coulomb} \bigg]
+    \end{align*}
+\end{karte}
+
+\begin{karte}{elektrische Arbeit}
+    \begin{align*}
+        W &= Q \cdot U \\
+          &= \int_{r1}^{r2} \vec F \cdot \vec{ds} \\
+          &= Q \cdot \int_{r1}^{r2} \vec E \cdot \vec{ds}
+    \end{align*}
+\end{karte}
+
+\begin{karte}{Raumladungsdichte}
+    \begin{align*}
+        \rho &= \frac{Q}{V} \quad \bigg[ \si{\coulomb\per\square\meter} \bigg]
+    \end{align*}
+\end{karte}
+
+\begin{karte}{Flächenladungsdichte}
+    \begin{align*}
+        \sigma &= \frac{Q}{A} \quad \bigg[ \si{\coulomb\per\cubic\meter} \bigg]
+    \end{align*}
+\end{karte}
+
+\begin{karte}{Längenladungsdichte}
+    \begin{align*}
+        \lambda &= \frac{Q}{l} \quad \bigg[ \si{\coulomb\per\meter} \bigg]
+    \end{align*}
+\end{karte}
+
+\begin{karte}{E-Feld Kugelkondensator}
+    \begin{align*}
+        E(r) &= \frac{Q}{4\pi \varepsilon_0 r^2} \text{ für } r \ll R_0
+    \end{align*}
+    \begin{tabular}[t]{cl}
+        \( \varepsilon_0 \): & elektrische Feldkonstante \\
+        \( Q \): & Ladung der Kugel \\
+        \( r \): & Kugelradius \\
+        \( R_0 \): & Entfernung Kugelmittelpunkt
+
+    \end{tabular}
+\end{karte}
+
+\begin{karte}{Flächenladungsdichte}
+    \begin{align*}
+        \rho &= \varepsilon_0 \cdot E_\perp \\
+    \end{align*}
+\end{karte}
+
+\begin{karte}{elektrische Verschiebungsdichte}
+    \begin{align*}
+        \vec D &= \varepsilon_0 \varepsilon_r \cdot \vec E
+    \end{align*}
+\end{karte}
+
+\begin{karte}{Kapazität Plattenkondensator}
+    \begin{align*}
+        C &= \frac{Q}{U} = \varepsilon_0 \varepsilon_r \cdot \frac{A}{d}
+    \end{align*}
+\end{karte}
+
+\begin{karte}{Kapazität Kugelkondensator}
+    \begin{align*}
+        C &= \frac{Q}{U} = \frac{ 4 \pi \varepsilon_0 \varepsilon_r }{ 
+            \frac{1}{r_i} -
+            \frac{1}{r_a}
+        } 
+    \end{align*}
+\end{karte}
+
+\begin{karte}{Kapazität Zylinderkondensator}
+    \begin{align*}
+        C &= \frac{Q}{U} = \frac{ 2 \pi \varepsilon_0 \varepsilon_r l }{ 
+            \ln(\frac{r_a}{r_i})
+        } 
+    \end{align*}
+\end{karte}
+
+\begin{karte}{gespeicherte Energie Kondensator}
+    \begin{align*}
+        W &= \frac{1}{2} C U^2 = \frac{1}{2} \frac{Q^2}{C}
+    \end{align*}
+\end{karte}
+
+\begin{karte}{energiedichte Elektrisches Feld}
+    \begin{align*}
+        w &= \frac{W}{V} = \frac{1}{2} \varepsilon_0 \varepsilon_r E^2
+    \end{align*}
+\end{karte}
+
+\begin{karte}{elektrischer Strom}
+    \begin{align*}
+        I &= \frac{Q}{t} \\
+        \bigg[ \si{\ampere} &= \si{\coulomb\per\second} \bigg]
+    \end{align*}
+\end{karte}
+
+\begin{karte}{elektrische Stromdichte}
+    \begin{align*}
+        j &= \frac{I}{A} = \frac{E}{\sigma}
+    \end{align*}
+\end{karte}
+
+\begin{karte}{Leitfähigkeit}
+    \begin{align*}
+        R &= \rho \cdot \frac{l}{A}
+    \end{align*}
+    \begin{tabular}[t]{cl}
+        \( \rho \): & spezifischer Widerstand [\si{\ohm\meter}] \\
+    \end{tabular}
+\end{karte}
+
+
+\setcardid{250}
+\comment{E-Magnetismus}
+
+\begin{karte}{Erregung \(\infty\)-Draht}
+    \begin{align*}
+        H &= \frac{I}{2 \pi r}
+    \end{align*}
+\end{karte}
+
+\begin{karte}{Erregung lange, dünne Zylinderspule}
+    \begin{align*}
+        H &= I \frac{N}{l}
+    \end{align*}
+    \begin{tabular}[t]{cl}
+        \( N \): & Windungszahl \\
+        \( l \): & Länge \\
+    \end{tabular}
+\end{karte}
+
+\begin{karte}{Erregung Kreisstrom}
+    \begin{align*}
+        H &= \frac{I}{2 r}
+    \end{align*}
+\end{karte}
+
+\begin{karte}{magnetische Feldkonstante}
+    \begin{align*}
+        \mu_0 &= \SI{4\pi e-17}{\volt\second\per\ampere\per\meter}
+    \end{align*}
+\end{karte}
+
+\begin{karte}{magnetische Flussdichte}
+    \begin{align*}
+        \vec B &= \mu_0 \cdot \mu_r \cdot \vec H \\
+        \bigg[ \SI{1}{\tesla} &= 
+            \SI{1}{\volt\second\per\ampere\per\meter} \si{\ampere\per\meter} =
+            \SI{1}{\volt\second\per\square\meter} = \SI{e4}{\gauss}
+        \bigg]
+    \end{align*}
+    \begin{tabular}[t]{cl}
+        \( \vec H \): & magnetische Erregung \\
+        \( \mu_0 \): & magnetische Feldkonstante \\
+        \( \mu_r \): & magnetische Permeabilität \\
+    \end{tabular}
+\end{karte}
+
+\begin{karte}{Lorentz-Kraft}
+    \begin{align*}
+        \vec F_L &= q \cdot \vec v \times \vec B
+    \end{align*}
+\end{karte}
+
+\begin{karte}{Lorentz-Kraft\\ Draht \( \perp \) Magnetfeld}
+    \begin{align*}
+        F_L &= I l B
+    \end{align*}
+    \begin{tabular}[t]{cl}
+        \( I \): & Stromstärke \\
+        \( l \): & Leiterlänge im Magnetfeld \\
+        \( B \): & magnetische Flußdichte \\
+    \end{tabular}
+\end{karte}
+
+\begin{karte}{Bahnen freier Ladungsträger im Magnetfeld}
+    \begin{align*}
+        \tag{a} \vec v &\| \vec B   \Rightarrow \vec v = \text{const}  \\
+        & F_L = 0 \\
+        \tag{b} \vec v &\perp \vec B  \Rightarrow \vec v \not= \text{const}, | \vec v | = \text{const}  \\
+        &r = \tfrac{m \cdot V}{qB} \\
+        \tag{c} \vec v & \text{ beliebig}  \Rightarrow \vec v = \vec v_\perp + \vec v_\| \\
+        &\text{Überlagerung (a) und (b)}
+    \end{align*}
+
+\end{karte}
+
+\begin{karte}{Drehmoment auf Leiterschleife}
+    \begin{align*}
+        \vec M &= I \cdot \underbrace{\vec r \times \vec l}_{=\vec A} \times \vec B \\
+        &= I \cdot \vec A \times \vec B = \vec m \times \vec B \\
+        \text{mit } \vec m &= I \times \vec A \text{ (magnetischer Moment)}
+    \end{align*}
+\end{karte}
+
+
+\begin{karte}{Hallspannung}
+    \begin{align*}
+        U_H &= A_H \frac{I \cdot B}{d}
+    \end{align*}
+    \begin{tabular}[t]{cl}
+        \( A_H \): & Hall-Koeffizient \\
+        \( d \): & dicke des Plättchens \\
+    \end{tabular}
+\end{karte}
+
+
+\begin{karte}{Induzierte Spannung}
+    \begin{align*}
+        \text{Änderung } A && U_{ind} &= -N B \cdot \frac{\delta A}{\delta t} \\
+        \text{Änderung } B && U_{ind} &= -N A \cdot \frac{\delta B}{\delta t} \\
+        \text{Änderung } \varphi && U_{ind}(t) &= N \cdot B \cdot A \cdot \omega \cdot \sin (\omega t)
+    \end{align*}
+\end{karte}
+
+\begin{karte}{induktivität lange Zylinderspule}
+    \begin{align*}
+        L &= \mu_r \cdot \mu_0 \cdot A \cdot \frac{N^2}{l} \\
+        [L] &= \SI{1}{\volt\second\per\ampere}
+    \end{align*}
+\end{karte}
+
+\begin{karte}{Selbstinduktion Spule}
+    \begin{align*}
+        U_{ind} &= -L \cdot \frac{\delta I}{\delta t}
+    \end{align*}
+\end{karte}
+
+\begin{karte}{Energie in Spule}
+    \begin{align*}
+        W &= \frac{1}{2} L I^2
+    \end{align*}
+\end{karte}
+
+\begin{karte}{Energiedichte im Magnetfeld}
+    \begin{align*}
+        w &= \frac{1}{2} \mu_r \mu_0 H^2 = \frac{1}{2} H B
+    \end{align*}
+\end{karte}
